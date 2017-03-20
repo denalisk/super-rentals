@@ -1,0 +1,11 @@
+<h1> Welcome to Super Rentals </h1>
+
+<ul>
+  {{#each model as |rental|}}
+    {{rental-tile rental=rental}}
+  {{/each}}
+</ul>
+
+{{#link-to "about"}}About Page{{/link-to}}
+<br>
+{{#link-to "contact"}}Contact Page{{/link-to}}
