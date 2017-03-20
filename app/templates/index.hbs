@@ -2,9 +2,11 @@
 
 <ul>
   {{#each model as |rental|}}
-    {{rental-tile rental=rental}}
+    {{rental-tile rental=rental destroyRental="destroyRental"}}
   {{/each}}
 </ul>
+
+{{new-rental saveRental2="saveRental3"}}
 
 <!-- <ul>
   {{#each model as |rental|}}
