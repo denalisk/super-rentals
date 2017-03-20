@@ -20,6 +20,13 @@ export default Ember.Route.extend({
      console.log(rental);
      rental.destroyRecord();
      this.transitionTo('index');
+   },
+   saveReview3(params) {
+     console.log("level3");
+     console.log("this is " + this.store.createRecord);
+     var newReview = this.store.createRecord('review', params);
+     newReview.save();
+     this.transitionTo('index');
    }
  }
 });
