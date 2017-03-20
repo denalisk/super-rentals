@@ -17,20 +17,21 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyCjrix9rBRDC78EQUBzhu4eqX4O3CHuCHQ",
+      authDomain: "super-rentals-9200d.firebaseapp.com",
+      databaseURL: "https://super-rentals-9200d.firebaseio.com",
+      storageBucket: "super-rentals-9200d.appspot.com",
+      messagingSenderId: "120100013867"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
   };
 
-  var config = {
-    apiKey: "AIzaSyCjrix9rBRDC78EQUBzhu4eqX4O3CHuCHQ",
-    authDomain: "super-rentals-9200d.firebaseapp.com",
-    databaseURL: "https://super-rentals-9200d.firebaseio.com",
-    storageBucket: "super-rentals-9200d.appspot.com",
-    messagingSenderId: "120100013867"
-  };
-  
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
