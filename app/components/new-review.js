@@ -1,20 +1,26 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  store: Ember.inject.service(),
+
   addNewReview: false,
   actions: {
     reviewFormShow() {
       this.set('addNewReview', true);
     },
 
-    saveReview1() {
-      console.log("Level 1");
+    saveReview1(rental) {
+      console.log("Start level 1");
       var params = {
         reviewer: this.get('reviewer'),
-        text: this.get('text')
+        text: this.get('text'),
+        rental_id: rental.get('id')
       };
       this.set('addNewReview', false);
-      this.sendAction('saveReview2', params);
+      console.log("near end level 1");
+      var store = this.get('store');
+      var newReview = store.createRecord('review', params);
+      newReview.save();
     }
   }
 });
