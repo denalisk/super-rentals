@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('rental', params.rental_id);
+    return Ember.RSVP.hash({
+      rental: this.store.findRecord('rental', params.rental_id),
+      reviews: this.store.query('review', { filter: { id: params.rental_id } })
+    });
   },
   actions: {
    update(rental, params) {

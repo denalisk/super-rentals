@@ -1,4 +1,5 @@
-<h2>More information about {{model.owner}}'s {{model.type}}</h2>
-{{update-rental rental=model update="update"}}
-{{rental-detail rental=model destroyRental="destroyRental"}}
-{{new-review rental=model saveReview2="saveReview3"}}
+<h2>More information about {{model.rental.owner}}'s {{model.rental.type}}</h2>
+{{update-rental rental=model.rental update="update"}}
+{{rental-detail rental=model.rental destroyRental="destroyRental"}}
+{{new-review rental=model.rental saveReview2="saveReview3"}}
+<!-- {{rental-review model=model.reviews }} -->
