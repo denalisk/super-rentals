@@ -20,6 +20,7 @@ export default Ember.Component.extend({
       console.log("near end level 1");
       var store = this.get('store');
       var newReview = store.createRecord('review', params);
+      console.log(newReview.get('reviewer'));
       newReview.save();
     }
   }
