@@ -1,0 +1,10 @@
+img {
+  max-width: 50%;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+.btn img {
+  max-width: 30px;
+  max-height: 30px;
+}

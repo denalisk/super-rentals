@@ -14,6 +14,6 @@
 
 <ul>
   {{#each model.reviews as |review|}}
-    <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
+    <li>{{#link-to 'rental' review.rental.id}}<strong>{{review.rental.owner}}'s {{review.rental.type}}</strong> Rating: {{review.rating}} - {{review.content}} - by {{review.author}}{{/link-to}}</li>
   {{/each}}
 </ul>
