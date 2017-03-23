@@ -6,6 +6,18 @@ export default Ember.Route.extend({
   },
 
   actions: {
+
+    saveNewReview(params) {
+      console.log('youre saving again');
+      var newReview = this.store.createRecord('review', params);
+      var rental = params.rental;
+      rental.get('reviews').addObject(newReview);
+      newReview.save().then(function() {
+        return rental.save();
+      });
+      this.transitionTo('rental', rental);
+    },
+
     update(rental, params) {
       Object.keys(params).forEach(function(key) {
         if(params[key]!==undefined) {
