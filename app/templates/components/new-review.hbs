@@ -1,0 +1,17 @@
+{{#if createNewReview}}
+<h2>Create New Review</h2>
+<form>
+  <div class="form-group">
+    {{input class="form-control" value=author id="author" placeholder="author"}}
+  </div>
+  <div class="form-group">
+    {{input class="form-control" value=rating id="rating" placeholder="rating"}}
+  </div>
+  <div class="form-group">
+    {{textarea row="20" cols="100" class="form-control" value=content id="content" placeholder="content"}}
+  </div>
+  <button type="submit" class="btn btn-info" {{action 'saveNewReview'}}>Submit</button>
+</form>
+{{else}}
+<button type="button" class="btn btn-info" {{action 'reviewFormShow'}}>Create New Review</button>
+{{/if}}
