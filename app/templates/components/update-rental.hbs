@@ -1,5 +1,5 @@
 {{#if updateRentalForm}}
-  <h4>Update {{rental.owner}}'s {{rental.type}}</h4>
+  <h4>Update {{rental.owner}}'s {{rental.propertyType}}</h4>
   <div>
     <form>
       <div class="form-group">
@@ -8,8 +8,8 @@
       </div>
 
       <div class="form-group">
-        <label for="type">Type</label>
-        {{input value=type id="type" placeholder=rental.type}}
+        <label for="propertyType">Type</label>
+        {{input value=propertyType id="propertyType" placeholder=rental.propertyType}}
       </div>
 
       <div class="form-group">

@@ -1,29 +1,38 @@
 { "rentals": [{
-  "owner": "Veruca Salt",
-  "city": "San Francisco",
-  "type": "Estate",
-  "bedrooms": 15,
-  "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
-}, {
-  "owner": "Mike TV",
-  "city": "Seattle",
-  "type": "Condo",
-  "bedrooms": 1,
-  "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
-}, {
-  "owner": "Violet Beauregarde",
-  "city": "Portland",
-  "type": "Apartment",
-  "bedrooms": 3,
-  "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
-  }],
-  "reviews": [{
-    "author": "Andrea",
-    "rating": 4,
-    "content": "Did not fall down."
+    "owner": "Veruca Salt",
+    "city": "San Francisco",
+    "propertyType": "Estate",
+    "bedrooms": 15,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
   }, {
-    "author": "Alex",
-    "rating": 9,
-    "content": "Nice view of the volcano!"
+    "owner": "Mike TV",
+    "city": "Seattle",
+    "propertyType": "Condo",
+    "bedrooms": 1,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
+  }, {
+    "owner": "Violet Beauregarde",
+    "city": "Portland",
+    "propertyType": "Apartment",
+    "bedrooms": 3,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
+    }],
+    "reviews": [{
+      "author": "Andrea",
+      "rating": 4,
+      "content": "Did not fall down."
+    }, {
+      "author": "Alex",
+      "rating": 9,
+      "content": "Nice view of the volcano!"
+    }],
+  "propertyTypes": [{
+    "name": "Condo"
+  }, {
+    "name": "House"
+  }, {
+    "name": "Cage"
+  }, {
+    "name": "Castle"
   }]
 }
