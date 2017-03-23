@@ -4,7 +4,7 @@
 
 <ul>
   {{#each model.rentals as |rental|}}
-    {{rental-tile rental=rental update="update" destroyRental="destroyRental"}}
+    {{rental-tile rental=rental destroyRental="destroyRental"}}
   {{/each}}
 </ul>
 
@@ -17,5 +17,3 @@
     <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
   {{/each}}
 </ul>
-
-{{new-review saveNewReview="saveNewReview"}}

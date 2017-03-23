@@ -1,7 +1,5 @@
-
-
 <h5>
-  {{rental.owner}}'s {{rental.type}} in {{rental.city}}
+  {{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city}} {{/link-to}}
   {{#if isImageShowing}}
   <p>
     <img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}>
@@ -9,6 +7,5 @@
   {{else}}
   <button class="btn btn-info"{{action 'imageShow'}}>See image</button>
   {{/if}}
-  {{update-rental rental=rental update="update"}}
   <button class="btn btn-sm btn-danger"{{action 'delete' rental}}>X</button>
 </h5>

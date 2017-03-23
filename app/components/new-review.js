@@ -13,7 +13,7 @@ export default Ember.Component.extend({
         rating: this.get('rating'),
         content: this.get('content')
       };
-      this.set('createNewReview', false),
+      this.set('createNewReview', false);
       this.sendAction('saveNewReview', params);
     }
   }
