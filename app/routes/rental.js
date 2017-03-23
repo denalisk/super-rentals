@@ -26,6 +26,11 @@ export default Ember.Route.extend({
       });
       rental.save();
       this.transitionTo('index');
+    },
+
+    destroyReview(review) {
+      review.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });
